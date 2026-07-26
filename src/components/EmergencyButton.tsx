@@ -211,9 +211,6 @@ export default function EmergencyButton() {
                     >
                       Call me — I'm here for you
                     </motion.p>
-                    <p className="font-[Poppins] text-xs text-moonlight/30 mt-1">
-                      Tap the phone to reach me anytime
-                    </p>
                   </div>
 
                   {/* Close button */}

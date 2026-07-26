@@ -248,7 +248,7 @@ export const TIMELINE_MILESTONES = [
   { label: "Final Revision", desc: "The calm before the storm. You're almost there.", emoji: "📝" },
   { label: "Exam Day",       desc: "The day everything you've worked for comes together.", emoji: "🎯", highlight: true },
   { label: "Selection",      desc: "The moment the world sees what I always knew.", emoji: "🏆", highlight: true },
-  { label: "Parents Proud",  desc: "Their eyes shine with the dream they always had for you.", emoji: "👨‍👩‍👧" },
+  { label: "Family Proud",  desc: "Their eyes shine with the dream they always had for you.", emoji: "👨‍👩‍👧" },
   { label: "Us Celebrating", desc: "Together. Finally. Forever.", emoji: "🎉", highlight: true },
 ];
 
@@ -302,38 +302,38 @@ export const UNIVERSE_PLANETS = [
   {
     id: "birthday",
     emoji: "🎂",
-    title: "Birthday",
+    title: "Happy Badda Cutu",
     desc: "The day we celebrated you.",
     color: "#F06292",
     size: 60,
-    url: "", // ← ADD A LIVE URL HERE! e.g. "https://your-birthday-site.com"
+    url: "https://badda-cuckoo.vercel.app/  ", // ← ADD A LIVE URL HERE! e.g. "https://your-birthday-site.com"
   },
   {
     id: "sorry",
     emoji: "🌸",
-    title: "Sorry",
+    title: "Sorrowww naa Cuckoo",
     desc: "The day I realized how much you mean to me.",
     color: "#7CB342",
     size: 45,
-    url: "",
+    url: "https://sorrowww.vercel.app/",
   },
   {
     id: "anniversary",
     emoji: "❤️",
-    title: "Anniversary",
-    desc: "Six months of us.",
+    title: "Heheheheh Heya",
+    desc: "My first webiste for you",
     color: "#B76E79",
     size: 55,
-    url: "",
+    url: "https://heyaaa-six.vercel.app/",
   },
   {
     id: "this-site",
     emoji: "🌙",
-    title: "This Website",
-    desc: "The place waiting whenever life gets hard.",
+    title: "Our cute Dairy",
+    desc: "The place where we maintain our connection even when life gets hard.",
     color: "#C9B8E8",
     size: 50,
-    url: "",
+    url: "https://docs.google.com/document/d/1HeI0nZKXIwg0zooo33uIu361LbYnMuM2HCW87M-QoKA/edit?usp=drivesdk",
   },
 ];
 
@@ -344,7 +344,7 @@ export const UNIVERSE_PLANETS = [
 export const DISTANCE = {
   herLabel: "You 🏠",
   myLabel: "Me 💙",
-  mainMessage: "Distance changes cities.",
+  mainMessage: "Distance changes cities - Adeeee Indore duur nhi hai",
   finalMessage: "Never hearts.",
 };
 
@@ -383,7 +383,7 @@ export const COMFORT_MESSAGES = {
     heading: `I miss you too, ${SITE_INFO.petName}`,
     lines: [
       "Right now, somewhere, I'm thinking about you too.",
-      "I miss your voice. Your laugh. The way you say my name.",
+      "I miss your voice. Your laugh. The way you say Yash.",
     ],
     highlight: "This distance is temporary. Our love isn't.",
     memories: ["💖 Remember our first photo?", "💖 Remember that stupid laughing session?", "💖 Remember how we talked for hours?"],
@@ -396,15 +396,15 @@ export const COMFORT_MESSAGES = {
       "One mock test never decides your capability.",
       "One bad day doesn't erase all your good ones.",
     ],
-    highlight: "I am proud of you. Not after selection. Today.",
-    closeText: "I'll try again tomorrow 💪",
+    highlight: "I am proud of you betu pie. Not after selection. Today.",
+    closeText: "I'll try again honeybun💪",
   },
   hug: {
     heading: "Sending you the biggest hug",
     lines: [
-      "Close your eyes for a moment.",
+      "Aakhein band karo.",
       "Imagine my arms around you.",
-      "You're safe. You're loved. You're enough.",
+      "My baby, Sona, mera cuta baby...",
     ],
     highlight: "I wish I could hold you right now. But this hug travels through time and space to reach you.",
     closeText: "Hug received ❤️",
@@ -413,22 +413,22 @@ export const COMFORT_MESSAGES = {
     heading: "The night is gentle with you",
     lines: [
       "Close your eyes.",
-      "Imagine we're walking together under these stars.",
+      "Imagine our late night, deep talks",
       "No syllabus. No deadlines. Just us.",
-      "Everything will be okay.",
+      "It's all good sweetie :)",
     ],
-    highlight: "Sleep peacefully, my love. I'll still be here tomorrow.",
-    closeText: "Goodnight 🌙",
+    highlight: "Sleep peacefully, my love. Mai aapke paas hi hu.",
+    closeText: "Goodnight love🌙",
   },
   lost: {
     heading: `You're not lost, ${SITE_INFO.petName}`,
     lines: [
-      "You're just in the part of the journey where the path isn't clear yet.",
-      "That doesn't mean you're going the wrong way.",
+      "You can only lost in my heart, thike naaa?",
+      "Failure doesn't mean you're going the wrong way.",
       "It means you're growing.",
     ],
     highlight: "Trust the process. Trust yourself. I trust you more than you trust yourself.",
-    closeText: "I'll find my way 🌟",
+    closeText: "That's my Girl🌟",
   },
   mock: {
     heading: "One mock test. That's all it was.",
@@ -444,13 +444,12 @@ export const COMFORT_MESSAGES = {
   home: {
     heading: "Home isn't going anywhere",
     lines: [
-      "Your mom's kitchen. Your dad's jokes. Your bed. Your room.",
-      "They're all still there, waiting for you.",
-      "You're not abandoning home. You're building a new one.",
+      "Mai hu naa bacche, mai aapka ghar hu naaa.",
+      "Sb log yhi hai, waiting for you.",
       "And when you come back, you'll come back stronger.",
     ],
     highlight: "Home is proud of you for leaving. Because home knows you'll return with your dream.",
-    closeText: "I'll call home today 📞",
+    closeText: "Mumma se baat krti 📞",
   },
 };
 
@@ -468,7 +467,7 @@ export const FINAL_MESSAGES = [
   "and smile together.",
 ];
 
-export const FINAL_LINE = "No matter how many kilometers separate us... you'll always have a home in my heart.";
+export const FINAL_LINE = "No matter how many kilometers separate us... you'll always have a home in my heart. Because whatever our souls are made of, yours and mine are the same";
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 🌙 COMFORT MODE — Letter that appears when toggling night mode
@@ -495,7 +494,7 @@ export const EXAM_CONFIG = {
   examDate: "2027-07-01",
 
   // Label for the countdown
-  countdownLabel: "Days until July 2027",
+  countdownLabel: "Days until exam in 2027",
 };
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

@@ -105,7 +105,7 @@ function MainContent() {
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 4, repeat: Infinity }}
             >
-              Project Home
+              Mashy, mashyash, Maya, My🧿
             </motion.p>
             <motion.p
               className={`font-[Dancing_Script] text-xl md:text-2xl mb-8

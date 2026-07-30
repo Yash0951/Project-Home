@@ -31,7 +31,7 @@ export default function DistanceSection() {
 
       <div className={`max-w-lg mx-auto p-6 rounded-2xl ${comfortMode ? 'glass-card-dark' : 'glass-card'}`}>
         {/* World Map */}
-        <svg viewBox="0 0 400 220" className="w-full mb-6">
+        <svg viewBox="60 0 280 150" className="w-full mb-6">
           {/* Background glow */}
           <defs>
             <radialGradient id="lineGlow" cx="50%" cy="50%" r="50%">

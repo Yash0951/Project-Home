@@ -56,7 +56,7 @@ export default function MemoryMuseum() {
       </motion.div>
 
       {/* Proper grid — always 2 on mobile, 3 on desktop */}
-      <div className="max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+      <div className="max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-2 gap-6 md:gap-8">
         {MEMORIES.map((mem, i) => {
           const ref = useRef(null);
           const isInView = useInView(ref, { once: true, margin: "-50px" });

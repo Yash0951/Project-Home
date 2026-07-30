@@ -185,7 +185,7 @@ export const MEMORIES = [
 
 export const PRIDE_CARDS = [
   { message: "You're disciplined.", emoji: "💪", detail: "You show up even when it's hard." },
-  { message: "You're kind.", emoji: "💖", detail: "You care about others even while chasing your dream." },
+  { message: "You're kind.", emoji: "💖", detail: "You care about me even while chasing your dream." },
   { message: "You never stop trying.", emoji: "🔥", detail: "Every setback is just a setup for your comeback." },
   { message: "You're brave.", emoji: "🦁", detail: "Leaving home to chase a dream takes courage most people never find." },
   { message: "You're stronger than you think.", emoji: "🌟", detail: "You've survived every bad day so far. That's a perfect record." },

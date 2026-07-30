@@ -113,13 +113,13 @@ export const MEMORIES = [
   },
   {
     caption: "The rainy day we spent together 🌧️",
-    imageUrl: "public/images/cuties.jpeg",
+    imageUrl: "/images/cuties.jpeg",
     orientation: "landscape",
     angle: 3,
   },
   {
     caption: "That late-night call that lasted hours 📱",
-    imageUrl: "public/images/Chaand.jpeg",
+    imageUrl: "/images/Chaand.jpeg",
     orientation: "portrait",  
     angle: -1,
   },

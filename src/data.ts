@@ -125,55 +125,55 @@ export const MEMORIES = [
   },
   {
     caption: "The food we both love 🍜",
-    imageUrl: "public/images/hehe.jpeg",
+    imageUrl: "/images/hehe.jpeg",
     orientation: "portrait",
     angle: -2,
   },
   {
     caption: "The happiest chai date ☕",
-    imageUrl: "public/images/chai.jpeg", // ← ADD YOUR PHOTO HERE! e.g. "/images/chai-date.jpg"
+    imageUrl: "/images/chai.jpeg", // ← ADD YOUR PHOTO HERE! e.g. "/images/chai-date.jpg"
     orientation: "portrait", // "landscape" or "portrait" — matches your photo
     angle: -3,
   },
   {
     caption: "Our favorite sunset 🌅",
-    imageUrl: "public/images/random.jpeg",
+    imageUrl: "/images/random.jpeg",
     orientation: "portrait",
     angle: -1,
   },
   {
     caption: "That surprise visit 🎁",
-    imageUrl: "public/images/zakir.jpeg",
+    imageUrl: "/images/zakir.jpeg",
     orientation: "portrait",
     angle: 3,
   },
   {
     caption: "That song that's now 'ours' 🎵",
-    imageUrl: "public/images/flowers.jpeg",
+    imageUrl: "/images/flowers.jpeg",
     orientation: "portrait",
     angle: -4,
   },
   {
     caption: "The day I realized I loved your smile 😊",
-    imageUrl: "public/images/couple.jpeg",
+    imageUrl: "/images/couple.jpeg",
     orientation: "landscape",
     angle: -2,
   },
   {
     caption: "Our first 'I love you' ❤️",
-    imageUrl: "public/images/the-seven.jpeg",
+    imageUrl: "/images/the-seven.jpeg",
     orientation: "landscape",
     angle: 1,
   },
   {
     caption: "Our stupid laughing session 😂",
-    imageUrl: "public/images/laugh.jpeg",
+    imageUrl: "/images/laugh.jpeg",
     orientation: "landscape",
     angle: 4,
   },
   {
     caption: "The day we said 'forever' ✨",
-    imageUrl: "public/images/sukoon.jpeg",
+    imageUrl: "/images/sukoon.jpeg",
     orientation: "landscape",
     angle: 2,
   },

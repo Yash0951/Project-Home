@@ -107,7 +107,7 @@ export const LOVE_NOTES = [
 export const MEMORIES = [
   {
     caption: "Our first photo together 📸",
-    imageUrl: "public/images/first.jpg",
+    imageUrl: "/images/first.jpg",
     orientation: "landscape",
     angle: 2,
   },

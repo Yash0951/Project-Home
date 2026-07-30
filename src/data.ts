@@ -112,19 +112,19 @@ export const MEMORIES = [
     angle: 2,
   },
   {
-    caption: "The rainy day we spent together 🌧️",
+    caption: "The rainy day ~ together 🌧️",
     imageUrl: "/images/cuties.jpeg",
     orientation: "landscape",
     angle: 3,
   },
   {
-    caption: "That late-night call that lasted hours 📱",
+    caption: "That late-night call 📱",
     imageUrl: "/images/Chaand.jpeg",
     orientation: "portrait",  
     angle: -1,
   },
   {
-    caption: "The food we both love 🍜",
+    caption: "The first candid 🍜",
     imageUrl: "/images/hehe.jpeg",
     orientation: "portrait",
     angle: -2,
@@ -136,13 +136,13 @@ export const MEMORIES = [
     angle: -3,
   },
   {
-    caption: "Our favorite sunset 🌅",
+    caption: "That surprise visit 🎁",
     imageUrl: "/images/random.jpeg",
     orientation: "portrait",
     angle: -1,
   },
   {
-    caption: "That surprise visit 🎁",
+    caption: "It started with 🌅",
     imageUrl: "/images/zakir.jpeg",
     orientation: "portrait",
     angle: 3,
@@ -154,7 +154,7 @@ export const MEMORIES = [
     angle: -4,
   },
   {
-    caption: "The day I realized I loved your smile 😊",
+    caption: "The day I realized 😊",
     imageUrl: "/images/couple.jpeg",
     orientation: "landscape",
     angle: -2,

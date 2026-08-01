@@ -169,47 +169,81 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useApp } from '../context/AppContext';
 
 export default function MusicPlayer() {
-  const { musicPlaying, setMusicPlaying, musicVolume, setMusicVolume, comfortMode } = useApp();
+  const { musicPlaying, setMusicPlaying, musicVolume, setMusicVolume, comfortMode, isVoiceNotePlaying } = useApp();
   const [expanded, setExpanded] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const fadeIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  // Play / Pause audio cleanly without resetting timestamp
+  const clearFadeInterval = () => {
+    if (fadeIntervalRef.current) {
+      clearInterval(fadeIntervalRef.current);
+      fadeIntervalRef.current = null;
+    }
+  };
+
+  // 1-second fade effect when voice note starts/stops
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
 
+    clearFadeInterval();
+
+    if (isVoiceNotePlaying) {
+      // Fade OUT background music over 1 second
+      const startVolume = audio.volume;
+      const steps = 15;
+      const stepTime = 300 / steps;
+      let currentStep = 0;
+
+      fadeIntervalRef.current = setInterval(() => {
+        currentStep++;
+        const newVol = Math.max(0, startVolume * (1 - currentStep / steps));
+        audio.volume = newVol;
+
+        if (currentStep >= steps) {
+          clearFadeInterval();
+          audio.pause();
+        }
+      }, stepTime);
+    } else if (musicPlaying) {
+      // Fade IN background music over 1 second
+      audio.play().catch(() => {});
+      audio.volume = 0;
+      const targetVolume = musicVolume;
+      const steps = 20;
+      const stepTime = 1000 / steps;
+      let currentStep = 0;
+
+      fadeIntervalRef.current = setInterval(() => {
+        currentStep++;
+        const newVol = Math.min(targetVolume, (targetVolume * currentStep) / steps);
+        audio.volume = newVol;
+
+        if (currentStep >= steps) {
+          clearFadeInterval();
+        }
+      }, stepTime);
+    }
+  }, [isVoiceNotePlaying, musicPlaying, musicVolume]);
+
+  // Standard Play/Pause state handling
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio || isVoiceNotePlaying) return;
+
     if (musicPlaying) {
-      audio.play().catch(() => {
-        console.warn("Autoplay waiting for initial interaction");
-      });
+      audio.play().catch(() => {});
     } else {
       audio.pause();
     }
-  }, [musicPlaying]);
+  }, [musicPlaying, isVoiceNotePlaying]);
 
-  // Fallback: If autoplay is restricted by browser policy, play audio on first user click/tap
+  // Sync general volume changes
   useEffect(() => {
-    const handleUserInteraction = () => {
-      if (audioRef.current && musicPlaying && audioRef.current.paused) {
-        audioRef.current.play().catch(() => {});
-      }
-    };
-
-    window.addEventListener('click', handleUserInteraction, { once: true });
-    window.addEventListener('touchstart', handleUserInteraction, { once: true });
-
-    return () => {
-      window.removeEventListener('click', handleUserInteraction);
-      window.removeEventListener('touchstart', handleUserInteraction);
-    };
-  }, [musicPlaying]);
-
-  // Synchronize volume
-  useEffect(() => {
-    if (audioRef.current) {
+    if (audioRef.current && !isVoiceNotePlaying) {
       audioRef.current.volume = musicVolume;
     }
-  }, [musicVolume]);
+  }, [musicVolume, isVoiceNotePlaying]);
 
   return (
     <motion.div
@@ -218,15 +252,13 @@ export default function MusicPlayer() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      {/* HTML Audio Player */}
       <audio
         ref={audioRef}
-        src="/Chahun Main Ya Naa (full).mp3" /* Make sure your file is located at public/song.mp3 */
+        src="/Chahun Main Ya Naa (full).mp3"
         loop
         preload="auto"
       />
 
-      {/* Floating Toggle Button */}
       <motion.button
         onClick={() => setExpanded(!expanded)}
         className={`w-12 h-12 rounded-full flex items-center justify-center text-lg
@@ -234,10 +266,9 @@ export default function MusicPlayer() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        {musicPlaying ? '🎵' : '🔇'}
+        {musicPlaying && !isVoiceNotePlaying ? '🎵' : '🔇'}
       </motion.button>
 
-      {/* Control Panel */}
       <AnimatePresence>
         {expanded && (
           <motion.div
@@ -248,7 +279,6 @@ export default function MusicPlayer() {
             className={`absolute bottom-14 right-0 p-4 rounded-2xl w-48
               ${comfortMode ? 'glass-dark' : 'glass'}`}
           >
-            {/* Play/Pause Toggle */}
             <div className="flex items-center justify-between mb-3">
               <span className={`font-[Dancing_Script] text-sm
                 ${comfortMode ? 'text-moonlight' : 'text-rose-gold'}`}>
@@ -267,7 +297,6 @@ export default function MusicPlayer() {
               </motion.button>
             </div>
 
-            {/* Volume Slider */}
             <div className="flex items-center gap-2">
               <span className={`text-xs ${comfortMode ? 'text-moonlight/50' : 'text-warm-brown/50'}`}>
                 🔈

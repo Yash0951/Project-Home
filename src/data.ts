@@ -292,6 +292,14 @@ export const VOICE_NOTES = [
     desc: "Always here for you",
     transcript: "I miss you too. I wish I could be there with you right now. But until I can, know that my love is with you in every moment. You carry me in your heart, and I carry you in mine. Always.",
   },
+  {
+    id: 'shayari-1',
+    emoji: '📜',
+    title: 'A Special Shayari',
+    desc: 'written and spoken just for you',
+    transcript: 'Your shayari text transcript goes here...',
+    audioUrl: '/shayari.mp3',
+  },
 ];
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

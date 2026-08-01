@@ -168,6 +168,8 @@ interface AppState {
   setMusicVolume: (vol: number) => void;
   hasEntered: boolean;
   setHasEntered: (entered: boolean) => void;
+  isVoiceNotePlaying: boolean;
+  setIsVoiceNotePlaying: (playing: boolean) => void;
   studyStreak: number;
   studyDates: string[];
   markStudiedToday: () => void;
@@ -240,6 +242,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [musicPlaying, setMusicPlaying] = useState(false);
   const [musicVolume, setMusicVolume] = useState(0.5);
   const [hasEntered, setHasEntered] = useState(false);
+  const [isVoiceNotePlaying, setIsVoiceNotePlaying] = useState(false);
   const [studyStreak, setStudyStreak] = useState(0);
   const [studyDates, setStudyDates] = useState<string[]>([]);
   const [journalEntries, setJournalEntries] = useState<JournalEntry[]>([]);
@@ -325,6 +328,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       musicPlaying, setMusicPlaying,
       musicVolume, setMusicVolume,
       hasEntered, setHasEntered,
+      isVoiceNotePlaying, setIsVoiceNotePlaying,
       studyStreak, studyDates, markStudiedToday,
       journalEntries, addJournalEntry,
       moodLog, logMood,

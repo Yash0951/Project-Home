@@ -234,7 +234,7 @@ export default function MusicPlayer() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        {musicPlaying ? '🎵' : '🎼'}
+        {musicPlaying ? '🎵' : '🔇'}
       </motion.button>
 
       {/* Control Panel */}

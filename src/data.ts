@@ -293,13 +293,23 @@ export const VOICE_NOTES = [
     transcript: "I miss you too. I wish I could be there with you right now. But until I can, know that my love is with you in every moment. You carry me in your heart, and I carry you in mine. Always.",
   },
   {
-    id: 'shayari-1',
-    emoji: '📜',
-    title: 'A Special Shayari',
-    desc: 'written and spoken just for you',
-    transcript: 'Your shayari text transcript goes here...',
-    audioUrl: '/shayari.mp3',
-  },
+  id: 'shayari-1',
+  emoji: '📜',
+  title: 'A Special Shayari - ',
+  desc: 'written and spoken just for you',
+  transcript: `तौहफ़े में तेरी ख़ातिर ये ख़ूबसूरत सा गुलाब लाया हूँ,
+अपनी बे-इंतहा मोहब्बत का एक छोटा सा जवाब लाया हूँ।
+लोग तोड़कर लाते दुकानों से बे-ज़बान से फूल,
+पर मैं तो खुद को ही एक खिलता हुआ फूल एक सितारा बनाकर आया हूँ।
+इस बाज़ारी गुलाब की रंगत तो चंद दिनों में ढल जाएगी,
+भला उस बे-जान सी पंखुड़ी की क्या औक़ात मेरे आगे...
+जिसके पास अपनी कोई मुकम्मल ख़ूशबू ही नहीं!
+पर मेरे वजूद ki ताज़गी, वो कभी कम, कभी फीकी नहीं पड़ सकती,
+क्योंकि उस फूल से कहीं ज़्यादा असर आज मुझमें समाया है...
+अरे , मेरी इस रूह की असली 'महक' सिर्फ़ तू है!
+तू ही मेरी रूह में बसी महक का ख़ुमार है!`,
+  audioUrl: '/shayari.mp3',
+}
 ];
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

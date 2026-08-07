@@ -7,13 +7,13 @@ import LetterSection from './components/LetterSection';
 import ComfortCenter from './components/ComfortCenter';
 import Timeline from './components/Timeline';
 import MotivationWall from './components/MotivationWall';
-// import MemoryMuseum from './components/MemoryMuseum';
+import MemoryMuseum from './components/MemoryMuseum';
 import PrideSection from './components/PrideSection';
 import ProgressTree from './components/ProgressTree';
 import DistanceSection from './components/DistanceSection';
 import EmergencyButton from './components/EmergencyButton';
 import VoiceNotes from './components/VoiceNotes';
-// import OurUniverse from './components/OurUniverse';
+import OurUniverse from './components/OurUniverse';
 import FinalSection from './components/FinalSection';
 import MusicPlayer from './components/MusicPlayer';
 import InteractiveFeatures from './components/InteractiveFeatures';
@@ -159,8 +159,8 @@ function MainContent() {
         <SectionDivider />
 
         {/* Memory Museum */}
-        {/* <MemoryMuseum />
-        <SectionDivider /> */}
+        <MemoryMuseum />
+        <SectionDivider />
 
         {/* Pride Section */}
         <PrideSection />
@@ -183,8 +183,8 @@ function MainContent() {
         <SectionDivider />
 
         {/* Our Universe */}
-        {/* <OurUniverse />
-        <SectionDivider /> */}
+        <OurUniverse />
+        <SectionDivider />
 
         {/* Final Section */}
         <FinalSection />
